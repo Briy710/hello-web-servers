@@ -1,10 +1,19 @@
 {
-  "name": "purring-tenrec",
-  "version": "0.0.1",
+  "name": "hello-web-servers",
+  "version": "1.0.0",
   "description": "Hello Web Server",
   "main": "app.js",
-  "author": "Briy & Obo",
-  "dependencies": {
-    "ejs": "latest",
-    "express": "latest",
-},
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Briy710/hello-web-servers.git"
+  },
+  "author": "Briy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Briy710/hello-web-servers/issues"
+  },
+  "homepage": "https://github.com/Briy710/hello-web-servers#readme"
+}
