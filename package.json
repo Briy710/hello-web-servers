@@ -1,0 +1,10 @@
+{
+  "name": "purring-tenrec",
+  "version": "0.0.1",
+  "description": "Hello Web Server",
+  "main": "app.js",
+  "author": "Briy & Obo",
+  "dependencies": {
+    "ejs": "latest",
+    "express": "latest",
+},
