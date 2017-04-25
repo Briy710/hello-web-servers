@@ -1,5 +1,5 @@
 const marked = require('marked')
-marked.setOptins({
+marked.setOptions({
   renderer: new marked.Renderer(),
   gfm: true,
   tables: true,

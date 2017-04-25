@@ -1,0 +1,12 @@
+.sidelist-container {flex-flow: column wrap;}
+
+.form-container{}
+.marrkdown{
+  width: 50%;
+}
+.preview{
+  width: 50%;
+}
+.mkd-pre-container{
+  flex-direction: row;
+}
