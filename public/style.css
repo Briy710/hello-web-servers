@@ -1,4 +1,4 @@
-.sidelist-container {flex-flow: column wrap;}
+.sidebuttonst-container {flex-flow: column wrap;}
 
 .form-container{}
 .marrkdown{
@@ -8,5 +8,6 @@
   width: 50%;
 }
 .mkd-pre-container{
-  flex-direction: row;
+  flex-flow: row nowrap;
 }
+.file-name{}
