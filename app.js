@@ -12,9 +12,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-app.get('/', function(req, res) {
-  res.send('This is how we do it!!')
-})
+// app.get('/', function(req, res) {
+//   res.send('This is how we do i')
+// })
 
 app.get('/', function (req, res) {
   res.render('index', { title: 'Hey you there', message: 'I see you over there!' })

@@ -2,6 +2,19 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta9charset='utf-8')
+    link(rel='stylesheet', href='/public/stylesheets/style.css')
   body
-    block content
+    .sidebar-container
+      |links go here
+    .show-file-name
+      | header that shows file name
+    .view-container
+      .markdown-view
+        |a markdown header
+        |view area
+      .preview-view
+        | A preview title bar
+        |a view area
+
+  block content

@@ -1,4 +1,9 @@
-.sidebar-container{}
+.sidebar-container{
+  float:left;
+  width: 50%;
+  height: 90px;
+
+}
 .show-file-name{}
 .view-container{}
 .markdown-view{}
