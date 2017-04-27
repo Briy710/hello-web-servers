@@ -1,19 +1,30 @@
 const express = require('express');
-const router = express.Router();
+const fs = require( 'fs' )
+const bodyParser = require('body-parser')
+
 const app = express()
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-})
+app.use(bodyParser.json())
 
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-})
 //renders layout.pug
 app.get('/', function (req, res) {
-  res.render('index', { title: 'Hey you there', message: 'I see you over there!' })
+  fs.readdir( './files/', function( err, files ) {
+    if( err ) {
+      res.render( 'index', { files: [] })
+    } else {
+      res.render( 'index', { files: files })
+    }
+  })
 })
+
+app.post( '/files', function( request, response ) {
+  const fileName = request.body.fileName
+
+  fs.open( `./files/${fileName}.md`, 'a+', ( err, file ) => {
+    response.json({ message: 'Thanks for the file' })
+  })
+})
+
 //sets pug as the view engine
 app.set('view engine', 'pug')
 
@@ -23,5 +34,3 @@ app.use(express.static('public'))
 app.listen(3000, function() {
   console.log('You actually did it!!!! You accesed port 3000')
 })
-
-module.exports = router

@@ -1,8 +1,17 @@
 extends layout
 
 block content
+  .sidebar-container
+    .files
+      each file in files
+        .file= file
+
+    button(id='newFile') New File
+    button(id='deleteFilfe') Delete File
+
   .show-file-name
     | header that shows file name
+
   .view-container
     .markdown-view
         h3 Markdown
@@ -10,4 +19,4 @@ block content
         button(id='submit') Submit
     .preview-view
       h3 Preview
-      
+
