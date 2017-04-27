@@ -6,3 +6,10 @@ document.addEventListener('DOMContentLoaded', function(){
     document.querySelector('.preview-view').appendChild(outputText)
   })
 })
+
+
+// function(){
+//   document.querySelector('#newFile').adaddEventListener('click', function(){
+//     let file = document.createDocumenFragment('md')
+//   })
+// }
