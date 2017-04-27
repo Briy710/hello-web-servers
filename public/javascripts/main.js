@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 document.addEventListener( 'click', function(){
   document.querySelector('#newFile').addEventListener('click', function(){
-    let file = document.createElement().appendChild('.files')
+    let file = document.createElement('link')
     
   })
 })

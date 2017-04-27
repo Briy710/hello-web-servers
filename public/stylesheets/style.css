@@ -4,10 +4,13 @@
   height: 90px;
   color: red;
 }
-.show-file-name{}
+.show-file-name{
+  color: white;
+  background-color: blcak;
+}
 .view-container{
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
 }
 .markdown-view{
   width: 50%;
