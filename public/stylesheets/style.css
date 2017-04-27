@@ -1,0 +1,16 @@
+.sidebar-container{
+  float:left;
+  width: 50%;
+  height: 90px;
+  color: red;
+}
+.show-file-name{}
+.view-container{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.markdown-view{
+  width: 50%;
+  height: 5%;
+},
+.preview-view{}

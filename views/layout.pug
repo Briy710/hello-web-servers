@@ -2,8 +2,8 @@ doctype html
 html
   head
     title= title
-    meta9charset='utf-8')
-    link(rel='stylesheet', href='/public/stylesheets/style.css')
+    meta(charset='utf-8')
+    link(rel='stylesheets', href='/stylesheets/style.css',)
   body
     .sidebar-container
       |links go here
@@ -11,10 +11,12 @@ html
       | header that shows file name
     .view-container
       .markdown-view
-        |a markdown header
-        |view area
+        form
+          h3 Markdown
+          textarea
+          input(type='submit', value='submit')
       .preview-view
-        | A preview title bar
+        h3 Preview
         |a view area
 
   block content
