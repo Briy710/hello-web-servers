@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function(){
   })
 })
 
-
-// function(){
-//   document.querySelector('#newFile').adaddEventListener('click', function(){
-//     let file = document.createDocumenFragment('md')
-//   })
-// }
+document.addEventListener( 'click', function(){
+  document.querySelector('#newFile').addEventListener('click', function(){
+    let file = document.createElement().appendChild('.files')
+    
+  })
+})

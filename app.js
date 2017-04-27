@@ -20,6 +20,7 @@ app.set('view engine', 'pug')
 
 //allows access to files in public folder
 app.use(express.static('public'))
+
 app.listen(3000, function() {
   console.log('You actually did it!!!! You accesed port 3000')
 })
