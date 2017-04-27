@@ -1,7 +1,10 @@
 const express = require('express');
 const fs = require( 'fs' )
+const bodyParser = require('body-parser')
 
 const app = express()
+
+app.use(bodyParser.json())
 
 //renders layout.pug
 app.get('/', function (req, res) {
@@ -11,6 +14,14 @@ app.get('/', function (req, res) {
     } else {
       res.render( 'index', { files: files })
     }
+  })
+})
+
+app.post( '/files', function( request, response ) {
+  const fileName = request.body.fileName
+
+  fs.open( `./files/${fileName}.md`, 'a+', ( err, file ) => {
+    response.json({ message: 'Thanks for the file' })
   })
 })
 

@@ -7,9 +7,17 @@ document.addEventListener('DOMContentLoaded', function(){
   })
 })
 
-document.addEventListener( 'click', function(){
-  document.querySelector('#newFile').addEventListener('click', function(){
-    let file = document.createElement('link')
-    
+document.querySelector('#newFile').addEventListener('click', function(){
+  let file = window.prompt()
+
+  $.ajax({
+    url: '/files',
+    type: 'POST',
+    data: JSON.stringify({ fileName: file }),
+    contentType: "application/json; charset=utf-8",
+    dataType: "json",
+    success: function( message ){
+      window.location.reload( true )
+    }
   })
 })
