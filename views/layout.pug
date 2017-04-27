@@ -3,20 +3,11 @@ html
   head
     title= title
     meta(charset='utf-8')
-    link(rel='stylesheets', href='/stylesheets/style.css',)
+    link(rel='stylesheet', href='/stylesheets/style.css',)
+    script(src="javascripts/main.js")
   body
     .sidebar-container
       |links go here
-    .show-file-name
-      | header that shows file name
-    .view-container
-      .markdown-view
-        form
-          h3 Markdown
-          textarea
-          input(type='submit', value='submit')
-      .preview-view
-        h3 Preview
-        |a view area
 
-  block content
+
+    block content

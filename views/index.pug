@@ -1,5 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .show-file-name
+    | header that shows file name
+  .view-container
+    .markdown-view
+        h3 Markdown
+        textarea(id='input')
+        button(id='submit') Submit
+    .preview-view
+      h3 Preview
+      
