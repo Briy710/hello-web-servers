@@ -1,0 +1,19 @@
+.sidebar-container{
+  float:left;
+  width: 50%;
+  height: 90px;
+  color: red;
+}
+.show-file-name{
+  color: white;
+  background-color: blcak;
+}
+.view-container{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.markdown-view{
+  width: 50%;
+  height: 5%;
+},
+.preview-view{}
