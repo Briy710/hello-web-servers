@@ -1,7 +1,7 @@
 const express = require('express');
 const fs = require( 'fs' )
 const bodyParser = require('body-parser')
-
+const md = require('markdown-it')
 const app = express()
 
 app.use(bodyParser.json())
@@ -17,6 +17,7 @@ app.get('/', function (req, res) {
   })
 })
 
+//createsnew file.md in the sidebar when new file button clicked
 app.post( '/files', function( request, response ) {
   const fileName = request.body.fileName
 
@@ -30,6 +31,10 @@ app.set('view engine', 'pug')
 
 //allows access to files in public folder
 app.use(express.static('public'))
+
+// md.renderInline('/', function(req, res) {
+//
+// })
 
 app.listen(3000, function() {
   console.log('You actually did it!!!! You accesed port 3000')

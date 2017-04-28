@@ -18,8 +18,12 @@
   height: 5%;
 },
 .preview-view{}
+.input{
+  height: 100;
+  width: 100;
+  
+}
 #newFile{}
 #deleteFile{}
 #saveFile{}
-#input{}
 #submit{}
