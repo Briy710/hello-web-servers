@@ -5,18 +5,18 @@ block content
     .files
       each file in files
         .file= file
+        file= a(href='#', title='file')
+  buttonid='newFile') New Files
+  button(id='deleteFilfe') Delete File
 
-    button(id='newFile') New File
-    button(id='deleteFilfe') Delete File
-
+  header(id='header') this is the header  
+    
   .show-file-name
-    | header that shows file name
-
   .view-container
     .markdown-view
         h3 Markdown
         textarea(id='input')
         button(id='submit') Submit
+        button(id='saveFile') Save File
     .preview-view
       h3 Preview
-
