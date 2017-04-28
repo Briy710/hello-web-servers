@@ -3,10 +3,11 @@
   width: 50%;
   height: 90px;
   color: red;
+  background-color: black;
 }
 .show-file-name{
   color: white;
-  background-color: blcak;
+  background-color: black;
 }
 .view-container{
   display: flex;
@@ -17,3 +18,8 @@
   height: 5%;
 },
 .preview-view{}
+#newFile{}
+#deleteFile{}
+#saveFile{}
+#input{}
+#submit{}

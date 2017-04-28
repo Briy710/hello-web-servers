@@ -21,3 +21,7 @@ document.querySelector('#newFile').addEventListener('click', function(){
     }
   })
 })
+
+document.querySelector('#saveFile').addEventListener('click', function(){
+  let save = 
+})
